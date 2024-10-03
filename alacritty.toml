@@ -1,0 +1,38 @@
+#import = [
+#  "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
+#]
+live_config_reload = true
+#working_directory = "~/development"
+[window]
+decorations = "Full"
+opacity = 0.9
+#blur = true
+startup_mode = "Maximized"
+padding = { x = 5, y = 5 }
+title = "Alacritty"
+dynamic_title = false
+
+[font]
+normal = { family = "ComicShannsMono Nerd Font", style="Regular" }
+size = 28
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+
+[terminal]
+osc52 = "CopyPaste"
+
+[scrolling]
+history = 0
+
+[mouse]
+bindings = [
+{ mouse = "Right", action = "Paste" },
+]
+
+[keyboard]
+bindings = [
+{ key = "l", mods= "Control|Shift", action="ClearLogNotice"},
+{ key = "n", mods= "Control", action="CreateNewTab"},
+{ key = "Tab", mods= "Control", action="SelectNextTab"},
+]
