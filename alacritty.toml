@@ -1,12 +1,12 @@
-#import = [
-#  "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
-#]
+import = [
+  "~/.config/alacritty/themes/themes/catppucin.toml"
+]
 live_config_reload = true
 #working_directory = "~/development"
 [window]
-decorations = "Full"
+decorations = "none"
 opacity = 0.9
-#blur = true
+blur = true
 startup_mode = "Maximized"
 padding = { x = 5, y = 5 }
 title = "Alacritty"
@@ -14,7 +14,8 @@ dynamic_title = false
 
 [font]
 normal = { family = "ComicShannsMono Nerd Font", style="Regular" }
-size = 28
+#normal = { family = "UbuntuMono Nerd Font Mono", style="Regular" }
+size = 24
 
 [cursor]
 style = { shape = "Block", blinking = "On" }
@@ -23,16 +24,22 @@ style = { shape = "Block", blinking = "On" }
 osc52 = "CopyPaste"
 
 [scrolling]
-history = 0
+history = 10000
+multiplier = 2
 
 [mouse]
 bindings = [
 { mouse = "Right", action = "Paste" },
 ]
 
+
 [keyboard]
 bindings = [
 { key = "l", mods= "Control|Shift", action="ClearLogNotice"},
-{ key = "n", mods= "Control", action="CreateNewTab"},
+{ key = "n", mods= "Control|Shift", action="CreateNewTab"},
 { key = "Tab", mods= "Control", action="SelectNextTab"},
+{ key = "u", mods= "Control|Shift", action="ScrollHalfPageUp"},
+{ key = "d", mods= "Control|Shift", action="ScrollHalfPageDown"},
+{ key = "j", mods= "Alt", action="ScrollLineDown"},
+{ key = "k", mods= "Alt", action="ScrollLineUp"},
 ]
