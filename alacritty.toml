@@ -1,21 +1,22 @@
-import = [
+general.import = [
   "~/.config/alacritty/themes/themes/catppucin.toml"
 ]
-live_config_reload = true
+general.live_config_reload = true
 #working_directory = "~/development"
 [window]
 decorations = "none"
 opacity = 0.9
-blur = true
+#blur = true
 startup_mode = "Maximized"
 padding = { x = 5, y = 5 }
 title = "Alacritty"
 dynamic_title = false
 
 [font]
-normal = { family = "ComicShannsMono Nerd Font", style="Regular" }
+#normal = { family = "ComicShannsMono Nerd Font", style="Regular" }
 #normal = { family = "UbuntuMono Nerd Font Mono", style="Regular" }
-size = 24
+normal = { family = "JetBrainsMono Nerd Font", style="Regular" }
+size = 26
 
 [cursor]
 style = { shape = "Block", blinking = "On" }
